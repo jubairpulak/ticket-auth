@@ -1,0 +1,15 @@
+services:
+  virtual-account-service:
+    env_file: 
+      - .env.test
+    image:
+    container_name: 
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME_TEST}
+    ports: 
+      - ${PORT}:${PORT}

@@ -1,0 +1,10 @@
+~$api_doc.xlsx
+logs/*
+.vscode
+dist
+dist/*
+node_modules
+src/modules/.DS_Store
+*.lock
+.env*
+.DS_Store
