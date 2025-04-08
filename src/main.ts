@@ -30,7 +30,7 @@ async function bootstrap() {
 		NestFactoryOptions,
 	);
 	// global prefix
-	app.setGlobalPrefix("report-api");
+	app.setGlobalPrefix("auth-api");
 
 	expressBind(app, { locales: ["en", "bn"] });
 

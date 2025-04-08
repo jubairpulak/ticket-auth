@@ -10,6 +10,7 @@ import { AttendanceReportModule } from "./modules/attendance-report/attendance-r
 import { AttendanceReportService } from "./modules/attendance-report/attendance-report.service";
 import { BullModule } from "@nestjs/bull";
 import { ReportQueueService } from "./modules/attendance-report/report-queue.service";
+import { RegistrationModule } from './registration/registration.module';
 console.log("AppModule loaded", process.env.REDIS_HOST, process.env.REDIS_PORT);
 @Module({
 	imports: [
@@ -22,6 +23,8 @@ console.log("AppModule loaded", process.env.REDIS_HOST, process.env.REDIS_PORT);
 		DemoModule,
 
 		RepositoryModule,
+
+		RegistrationModule,
 
 
 	],

@@ -1424,6 +1424,7 @@ export class AttendanceReportService {
 		// // 	console.error("Error uploading to S3:", error);
 		// // 	throw new Error("Failed to upload file to S3");
 		// }
+		return
 	}
 
 	async getReports(businessId: number, businessMemberId: number) {

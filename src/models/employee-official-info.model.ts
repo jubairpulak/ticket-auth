@@ -45,6 +45,13 @@ export class EmployeeOfficialInfoModel extends Model<EmployeeOfficialInfoModel> 
 	})
 	email: string;
 
+	@Column({
+		type: DataType.STRING(255),
+		allowNull: false,
+		unique: true,
+	})
+	role: string;
+
 	@ForeignKey(() => DepartmentModel)
 	@Column({
 		type: DataType.INTEGER,
