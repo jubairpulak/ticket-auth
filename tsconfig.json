@@ -1,26 +1,27 @@
 {
-	"compilerOptions": {
-		"module": "commonjs",
-		"declaration": true,
-		"removeComments": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"allowSyntheticDefaultImports": true,
-		"target": "es2017",
-		"sourceMap": true,
-		"outDir": "./dist",
-		"baseUrl": "./",
-		"incremental": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
 
-		"esModuleInterop": true,
-		"types": [
-			// ... your other types
-			"node"
-		]
-	},
-	"include": [
-		"src/**/*.ts",
-		"src/config/config.json", // Include config.json
-		"src/registration/dto/user.dto"
-	]
+    "esModuleInterop": true,
+    "types": [
+      // ... your other types
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/config/config.json", // Include config.json
+    "src/registration/dto/user.dto",
+    "src/express.d.ts"
+  ]
 }
